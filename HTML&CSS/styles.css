@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+
+
+
+body{
+    font-family: sans-serif,;
+    margin: 0 auto;
+    }
+
+header{
+    text-align: center;
+    background-color: #add8e6;
+}
+
+.header_seperator{
+    display: flex;
+    background-color:lightgrey;
+    padding: 10px;
+
+}
+
+nav{
+    margin-top: 20px;
+    background-color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding:15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orange;
+    
+}
+
+.paragraph{
+    margin: 30px 0;
+    padding:0 10px;
+}
+
+.paragraph h1{
+    margin-bottom: 15px;
+
+}
+
+.paragraph p{
+    line-height:1.5;
+}
+
+.Trips{
+    margin-bottom: 30px;
+}
+
+.trips{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+@keyframes tripsAnimation {
+    from {
+         background-color: white; 
+         color: black;
+         border-width: 1px;
+         padding: 15px;
+    }
+    to{
+        background-color: black;
+        color: white;
+        border-width: 5px;
+        padding: 11px;
+
+    }
+}
+
+.trips:hover{
+    animation: tripsAnimation 2s;
+}
+
+.trips a{
+    color: black;
+    text-decoration: none;
+}
+
+.trips a:hover{
+    color: white;
+}
+
+.trips img{
+    width: 100%;
+}
+
+.trips h2{
+    margin: 30px 0 15px;
+}
+
+.trips p{
+    line-height: 1.5;
+}
+
+.original{
+    color: gray;
+    text-transform: uppercase;
+}
+
+.current span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Discount{
+    color: green;
+}
+
+
+
+footer{
+    list-style: none;
+    background: black;
+    padding: 10px 50px;
+}
+
+footer p{
+    color: white;
+}
+
+@media (min-width: 768px){
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    nav{
+        background: transparent;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    nav a{
+        color: black;
+        position: relative;
+        top: 0;
+        transition: top 0.5s, color 0.5s;
+    }
+
+    nav a:hover{
+        text-decoration: none;
+        color: red;
+        top: -10px;
+    }
+
+    .paragraph{
+        width: 50%;
+    }
+
+    .Trips{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .trips{
+        display: inline-block;
+    }
+}
