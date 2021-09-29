@@ -21,15 +21,15 @@ function Icon() {
 
     if ((hours >= 6 && hours < 18) || (hours = 18 && min == 0)) {
         
-            document.createElement("img", {
-                src: "/Icons/sunIcon.png",
+            document.createElement( "img" ,{
+                src: "../Icons/sunIcon.png",
                 width: "24px",
                 alt: "day",
             });
     } else {
        
-            document.createElement("img", {
-                src: "/Icons/MoonIcon.png",
+            document.createElement( "img", {
+                src: "../Icons/MoonIcon.png",
                 width: "24px",
                 alt: "night"
             });
