@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <title>Mega Travels</title>
     <script src="/Javascript/Welcome.js"></script>
-    
+   
 </head>
     <body>
     
@@ -44,15 +44,15 @@
             
             <div class="trips">
             <img src="Images/maldives.PNG" />
-            <h2><a href="#">Maldives Resort</a></h2>
-            <p class="original-">$1800.99</p>
-            <p class="current-">Price you pay <span>$999.99</span></p>
+            <h2><a href="Maldives">Maldives Resort</a></h2>
+            <p class="original">$1800.99</p>  
+            <p class="current">Price you pay <span>$999.99</span></p>
             <p class="Discount">You are saving $801</p>
             </div>
 
             <div class="trips">
             <img src="Images/mexico.PNG"  />
-            <h2><a href="#">Mexico Resort (All inclusive!)</a></h2>
+            <h2><a href="mexico">Mexico Resort (All inclusive!)</a></h2>
             <p class="original">$2999.99</p>
             <p class="current">Price you pay <span>$2199.99</span></p>
             <p class="Discount">You are saving $800</p>
@@ -60,7 +60,7 @@
 
             <div class="trips">
             <img src="Images/newzealand.PNG" />
-            <h2><a href="#">New Zealand Trek</a></h2>
+            <h2><a href="newzealand">New Zealand Trek</a></h2>
             <p class="original">$2499.00</p>
             <p class="current">Price you pay <span>$2100.00</span></p>
             <p class="Discount">You are saving $399</p>
@@ -68,13 +68,35 @@
 
             <div class="trips">
             <img src="Images/venice.PNG"  />
-            <h2><a href="#">Venice Italy</a></h2>
+            <h2><a href="venice">Venice Italy</a></h2>
             <p class="original">$4100.00</p>
             <p class="current">Price you pay <span>$3699.00</span></p>
             <p class="Discount">You are saving $400</p>
             </div>
-        
+            <script src="/Javascript/Activities.js"></script>    
         </section>
+        <section>
+        <!--Acivities HTML-->
+
+         <div id="activity">
+            <p id="activity-title"><b>Select a Destination to See Available Activities</b></p>
+            <form>
+                <input type="checkbox" id="option1" name="option1" value="option1">
+                <label id="opt1label" for="option1"></label><br>
+                <input type="checkbox" id="option2" name="option2" value="option2">
+                <label id="opt2label" for="option2"></label><br>
+                <input type="checkbox" id="option3" name="option3" value="option3">
+                <label id="opt3label" for="option3"></label><br>
+                <input type="checkbox" id="option4" name="option4" value="option4">
+                <label id="opt4label" for="option4"></label><br>
+                <input type="checkbox" id="option5" name="option5" value="option5">
+                <label id="opt5label" for="option5"></label>
+            </form>
+            <input id="submit" type="submit" value="submit">
+            <script src="/Javascript/Activities.js"></script>  
+           
+        </div> 
+    </section>
 
     </body>
     <footer> 
