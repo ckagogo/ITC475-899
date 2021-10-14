@@ -37,8 +37,9 @@
 
                 </div>
                 <br>
-
+                
                 <div id="Form">
+                    <form name="tavelForm" action="confirm.php" method="post">
             
                         <label for="fname">First Name:</label>
                         <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
@@ -61,6 +62,9 @@
                         <label for="date">Trip Date:</label>
                         <input type="date" id="date" name="date" placeholder="Trip Date" required><br>
 
+                        <div id="activity">
+                      <br> <p id="activity-title"><b>Select a Destination to See Available Activities</b></p></div></br>
+
                         <br><p><u>Please Select a Destination:</u></p>
         
                         <label for="maldives">Maldives</label>
@@ -75,7 +79,7 @@
                         <label for="venice">Venice</label>
                         <input type="radio" id="veniceButton" name="destination" value="venice" required><br>
 
-                        
+                      
                         <input type="checkbox" id="option1" name="option1" value="option1">
                         <label id="opt1label" for="option1"></label><br>
                         <input type="checkbox" id="option2" name="option2" value="option2">
@@ -93,11 +97,12 @@
                         <input type="submit" id="submitButton" onclick="validateForm()" value="submit">                                
                     </form>
 
-                   
+                <script src="../Javascript/ContactForm.js"></script>  
+                <script src="../Javascript/Activities.js"></script>  
+                    
                 </div>
                 
-                    <script src="../Javascript/ContactForm.js"></script>  
-                    <script src="../Javascript/Activities.js"></script>  
+                    
 
 
             </section>  
