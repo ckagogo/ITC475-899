@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link href="SettingStyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" >
+        <nav>
+            <ul class="nav">
+                <a style="padding:3%;" href="Settings.html">Settings</a>
+                <a style="padding:3%;" href="Status.html">Status</a>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <fieldset>
+        <legend>Doors</legend> 
+
+        <div id="frontDoor">
+            <label class="device">Unlock the Front Door</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="frontDoorStart" type="number" min="0" max="23">
+            <label>End Hour</label>
+            <input id="frontDoorEnd" type="number" min="0" max="23">
+            </div>
+            </br>
+        <div id="backDoor">
+            <label class="device">Unlock Back Door</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="backDoorStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="backDoorEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="garageDoor">
+            <label class="device">Open the Garage Door</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="garageDoorStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="garageDoorEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        </fieldset>
+
+        <fieldset>
+        <legend><strong>Lights & Lamps</strong></legend>
+        <div id="drLight">
+            <label class="device">Turn on the Dining Room Light</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="drLightStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="drLightEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="lrLamp">
+            <label class="device">Turn on the Living Room Lamp</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="lrLampStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="lrLampEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="b1Lamp">
+            <label class="device">Turn on the Bedroom Desk Lamp</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="b1LampStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="b1LampEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="b2Lamp">
+            <label class="device">Turn on the Bedroom Floor Lamp</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="b2LampStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="b2LampEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        </fieldset>
+
+        <fieldset>
+        <legend><strong>Fans</strong></legend>
+        <div id="kitchFan">
+            <label class="device">Turn on the Kitchen Fan</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="kitchFanStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="kitchFanEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="bathFan">
+            <label class="device">Turn on the Bathroom Fan</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="bathFanStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="bathFanEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        </fieldset>
+
+        <fieldset>
+        <legend><strong>Laundry</strong></legend>
+        <div id="washer">
+            <label class="device">Start the Washer</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="washerStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="washerEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        <div id="dryer">
+            <label class="device">Start the Dryer</label>
+            </br>
+            <label>Start Hour</label>
+            <input id="dryerStart" type="number" min="0" max="23"/>
+            <label>End Hour</label>
+            <input id="dryerEnd" type="number" min="0" max="23"/>
+            </div>
+            </br>
+        </fieldset>
+    </form>
+    <button id="confirm" onclick="Confirm()">Confirm</button>
+    <footer>
+    </footer>
+    <script src="Activities.js"></script>
+</body>
+</html>

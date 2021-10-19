@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page</title>
+    <link href="SettingStyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" >
+        <nav>
+            <ul class="nav">
+                <a style="padding:3%;" href="Settings.html">Settings</a>
+                <a style="padding:3%;" href="Status.html">Status</a>
+            </ul>
+        </nav>
+        <div id="runBtn"><button id="run" onclick="Run()">RUN</button></div>
+        <div id="clock"></div>
+    </header>
+    <div id="house"><img id="houseImg" src="Images/house.jpg" alt="House"></div>
+    <div class="grid" >
+        <div class="devices" id="front"><p>Front Door Status</p></div>
+        <div class="devices" id="back"><p>Back Door Status</p></div>
+        <div class="devices" id="garage"><p>Garage Door Status</p></div>
+        <div class="devices" id="dining"><p>Dining Room Light Status</p></div>
+        <div class="devices" id="living"><p>Living Room Lamp Status</p></div>
+        <div class="devices" id="bed1"><p>1st Bedroom Lamp Status</p></div>
+        <div class="devices" id="bed2"><p>2nd Bedroom Lamp Status</p></div>
+        <div class="devices" id="kitchen"><p>Kitchen Fan Status</p></div>
+        <div class="devices" id="bath"><p>Bathroom Fan Status</p></div>
+        <div class="devices" id="washer"><p>Washer Status</p></div>
+        <div class="devices" id="dryer"><p>Dryer Status</p></div>
+    </div>
+    <footer></footer>
+    <script src="Activities.js"></script>
+</body>
+</html>
