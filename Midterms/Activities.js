@@ -152,7 +152,7 @@ function statusIcons()
 // 1ST BEDROOM LAMP -----------------------------------------------------------------
     if(tar[10] <= hour < tar[11])
     {
-        imgB1L.src= "Images/LightOn2.jpg";
+        imgB1L.src= "Images/LightOn2.png";
     }
     else
     {
