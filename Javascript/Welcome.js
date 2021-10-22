@@ -1,44 +1,51 @@
-function Greeting() {
-    var date = new Date();
-    var hours = date.getHours();
-    var time = date.toLocaleTimeString();
-    var greeting;
-    
+var time = new Date();
 
-    if (hours > 12){
-        greeting = "Morning";
-    } else if(hours >= 12 && hours <17){
-        greeting = "Afternoon";
-    } else {
-        greeting = "Evening";
-    }
+var hour = time.getHours();
 
-    return (
-        document.write("h3", {id: "Welcome"}, " Good ", greeting, "! ", document.createElement("p", {id: "WelcomeTime"}), time));
-    
+var minute = time.getMinutes();
+
+var message = "hello";
+
+var date = hour + ":" + minute;
+
+var icon;
+
+var sun = document.createElement("img");
+sun.setAttribute("src", "Icons/sunIcon.png");
+sun.setAttribute("width", "100");
+sun.setAttribute("height", "100");
+sun.setAttribute("alt", "sun.png");
+sun.setAttribute("class", "center-time");
+
+var moon = document.createElement("img");
+moon.setAttribute("src", "Icons/moonIcon.png");
+moon.setAttribute("width", "100");
+moon.setAttribute("height", "100");
+moon.setAttribute("alt", "moon.png");
+moon.setAttribute("class", "center-time");
+
+if (new Date().getHours() < 12)
+{
+    message = "Good Morning"
+}
+else if (new Date().getHours() < 17)
+{
+    message = "Good Afternoon";
+}
+else
+{
+    message = "Good Evening";
 }
 
-function Icon() {
-    var date = new Date();
-    var hours = date.getHours();
-    var min = date.getMinutes();
-
-    if ((hours >= 6 && hours < 18) || (hours = 18 && min == 0)) {
-        
-            document.createElement( "img" ,{
-                src = "Icons/sunIcon.png",
-                width: "24px",
-                alt: "day",
-            });
-    } else {
-       
-            document.createElement( "img", {
-                src: "Icons/moonIcon.png",
-                width: "24px",
-                alt: "night"
-            });
-    }
-
+if (new Date().getHours() > 6 && new Date().getHours() < 18)
+{
+    document.body.appendChild(sun);
+}
+else
+{
+    document.body.appendChild(moon);
 }
 
+document.getElementById("greeting").innerHTML=message;
 
+document.getElementById("time").innerHTML=date;
