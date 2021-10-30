@@ -62,6 +62,7 @@ function Confirm()
        b1ls, b1le, b2ls, b2le, kfs, kfe, bfs, bfe, ws, we, ds, de];
 
     window.localStorage.setItem("smartTimings", arrayData);
+    window.location.href = "Status.html"
 }
 
 function statusIcons()

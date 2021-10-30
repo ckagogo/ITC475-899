@@ -42,7 +42,7 @@
     #run 
     {
         border: none;
-        color: gray;
+        color:black;
         background-color: #fcf79b;
         height: 25px;
         margin-top: 12px;
@@ -144,7 +144,7 @@
     {
         border: none;
         background-color: #fcf79b;
-        color: gray;
+        color: black;
         padding: 1.5%;
         margin: 1.5%;
         margin-top: 0%;
