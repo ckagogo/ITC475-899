@@ -63,6 +63,7 @@ function Confirm()
 
     window.localStorage.setItem("smartTimings", arrayData);
     window.location.href = "Status.html"
+    
 }
 
 function statusIcons()
