@@ -174,3 +174,22 @@ footer p{
         display: inline-block;
     }
 }
+/* CSS Thank you messages */
+#Thank {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*  CSS for tables*/
+#Table {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Table tr td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
