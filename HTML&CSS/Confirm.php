@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+    <?php
+    $db = mysqli_connect('localhost', 'root', '', 'db_contact') or die('error connecting to database');
+    ?>
+
+<html>
+    
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
