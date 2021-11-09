@@ -22,8 +22,17 @@ function updateTime(k)
     }
 }
 
+
+    
+
+
 function Confirm()
 {
+    let d = new Date();
+    let hrs = d.getHours();
+    let mins = d.getMinutes();
+    let time = hrs + ':' + mins;
+
     let fds = document.getElementById("frontDoorStart").value;
     let fde = document.getElementById("frontDoorEnd").value;
 
@@ -68,8 +77,11 @@ function Confirm()
 
 function statusIcons()
 {
+    
+
     let timings = window.localStorage.getItem("smartTimings");
     let tar = timings.split(',');
+    
 
     var imgFD = document.createElement("img");
     var imgBD = document.createElement("img");
@@ -85,6 +97,7 @@ function statusIcons()
 
     let d = new Date;
     let hour = d.getHours();
+  
 
 // FRONT DOOR -----------------------------------------------------------------
     if(tar[0] <= hour < tar[1])
@@ -228,10 +241,16 @@ function statusIcons()
 
     var front = document.getElementById("dryer");
     front.appendChild(imgD);
+
 }
+
 
 function Run()
 {
     Time();
     statusIcons();
+    
+    
 }
+
+

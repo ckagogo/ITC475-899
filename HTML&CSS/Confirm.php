@@ -1,10 +1,10 @@
 <!DOCTYPE html>
     <?php
-    $db = mysqli_connect('localhost', 'root', '', 'db_contact') or die('error connecting to database');
+    $db = mysqli_connect('localhost', 'root', '', 'db_contact','3306') or die('error connecting to database');
     ?>
 
 <html>
-    
+
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
@@ -14,8 +14,8 @@
     <div id="Header">
     <img src= "Images/mega travel logo.png" width="420px" height="290px">
     </div>
-    <div id="Header-Separate">
-    </div>
+    <div class="header_seperator"></div>
+    
 
     <!-- Nav Links HTML -->
     <nav>
