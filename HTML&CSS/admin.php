@@ -28,7 +28,7 @@ $result = mysqli_query($db, "SELECT * FROM tbl_contact");
 
     <!-- PHP -->
     <?php
-    if (mysqli_num_rows($result) > 0) {
+    if ($result !== false && $result->num_rows > 0) {
     ?>
         <table>
 
@@ -57,7 +57,7 @@ $result = mysqli_query($db, "SELECT * FROM tbl_contact");
                     <td><?php echo $row["childNumber"]; ?></td>
                     <td><?php echo $row["tripDate"]; ?></td>
                     <td><?php echo $row["destinationName"]; ?></td>
-                    <td><?php echo $row["id"]; ?></td>
+                    
                 </tr>
             <?php
                 $i++;

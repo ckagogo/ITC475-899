@@ -32,17 +32,17 @@
     $firstName = $lastName = $email = $pNumber = $numAdult = $numChild = $date = $destination = $activity1 =
         $activity2 = $activity3 = $activity4 = $activity5 = "";
 
-    $firstName = $_POST["fname"];
-    $lastName = $_POST["lname"];
-    $email = $_POST["email"];
-    $pNumber = $_POST["phone"];
-    $numAdult = $_POST["adults"];
-    $numChild = $_POST["child"];
-    $date = $_POST["date"];
-    $destination = $_POST["destination"];
+    $firstName = $_POST["fname"] ??'';
+    $lastName = $_POST["lname"] ??'';
+    $email = $_POST["email"] ??'';
+    $pNumber = $_POST["phone"] ??'';
+    $numAdult = $_POST["adults"] ??'';
+    $numChild = $_POST["child"] ??'';
+    $date = $_POST["date"] ??'';
+    $destination = $_POST["destination"] ??'';
 
-    $sql = "INSERT INTO `tbl_contact` (`fName`, `lName`, `eMail`, `phoneNumber`, `adultNumber`, `childNumber`, `tripDate`, `destinationName`, `id`) 
-                                VALUES ('$firstName', '$lastName', '$email', '$pNumber', '$numAdult', '$numChild', '$date', '$destination', '0')";
+    $sql = "INSERT INTO `tbl_contact` (`fName`, `lName`, `eMail`, `phoneNumber`, `adultNumber`, `childNumber`, `tripDate`, `destinationName`) 
+                                VALUES ('$firstName', '$lastName', '$email', '$pNumber', '$numAdult', '$numChild', '$date', '$destination')";
     $rs = mysqli_query($db, $sql);
 
     ?>
