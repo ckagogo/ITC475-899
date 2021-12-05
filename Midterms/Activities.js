@@ -81,6 +81,7 @@ function statusIcons()
 
     let timings = window.localStorage.getItem("smartTimings");
     let tar = timings.split(',');
+    let time = hrs + ':' + mins;
     
 
     var imgFD = document.createElement("img");

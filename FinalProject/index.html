@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="race, cars, racecar, game" />
+    <title>Speedster Racers</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav style="margin:auto">
+            <ul style="display:table; margin: auto;"> 
+                <a href="race.html">SPEEDSTER RACERS</a>
+            </ul>        
+        </nav>
+    </header>
+
+    <div style="padding-left: 2%; padding-top: 1%;">
+        <form action="http://localhost/raceGame/viewStats.php" 
+        method="post" id="raceStats">
+        <input type="submit" style="background-color: white; color:#a61919; 
+        padding: 0.5%;" value="RACING STATS"/>
+        </form>
+    </div>
+
+    <form action="http://localhost/raceGame/raceDB.php" method="post" id="playerSelect">
+        <fieldset style="padding: 1%; background-color: rgba(255, 255, 255, 0.3); 
+            border: black; border-width: thick; border-style: double;">
+            <div class="formRow">
+                <label style="font-family: Arial, Helvetica, sans-serif; color: white;
+                    font-weight: bold; margin: 1%;">SELECT RACER 1</label>
+                <select id="r1select" name="racer1select" style="width:50%; height: 35px;">
+                    <option value="blank" selected>-----</option>
+                    <option value="Racer 1">Sonic</option>
+                    <option value="Racer 2">SpeedyG</option>
+                    <option value="Racer 3">RR</option>
+                    <option value="Racer 4">Flash</option>
+                </select>
+                <input type="button" id="confirm1" onclick="setP1()" value="confirm">
+                <br><br>
+                <label style="font-family: Arial, Helvetica, sans-serif; color: white;
+                font-weight: bold; margin: 1%;">SELECT RACER 2</label>
+                <select id="r2select" name="racer2select" style="width:50%; height: 35px;">
+                    <option value="blank" selected>-----</option>
+                    <option value="Racer 1">Sonic</option>
+                    <option value="Racer 2">SpeedyG</option>
+                    <option value="Racer 3">RR</option>
+                    <option value="Racer 4">Flash</option>
+                </select>
+                <input type="button" id="confirm2" onclick="setP2()" value="confirm">
+            </div>
+        </fieldset>
+        <br><br>
+        <div class="row">
+            <div id="pageTitle">IT'S TIME TO RACE!</div>
+            <a href="index.html"><div id="winnerBox"></div></a>
+            <input type="submit" id="submit" value="SAVE RACE" 
+            style="background-color: white; color:#080808; 
+            padding: 0.5%; height:40px; margin-top: 1.5%; margin-left:10%;"/>
+        </div>
+    </form>
+
+    <div id="lightContainer"><a href="#" onclick="race()" id="stoplightBtn">
+        <img src="Images/redLight.png" alt="red light" id="stoplight" /></a></div>
+    
+    <div id="track">
+        <div id="player1slot"></div>
+        <div id="player2slot"></div>
+
+        <img id="start" src="Images/startLine.png" alt="starting line"/> 
+        <img id="finish" src="Images/finishLine.png" alt="finish line"/>
+    </div>
+
+    <div id="saveMessage"></div>
+
+    <script src="raceGame.js"></script>
+</body>
+
+</html>
